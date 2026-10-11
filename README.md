@@ -1,4 +1,19 @@
-# LaravelRental — Equipment Rental Management System
+# LaravelRental ï¿½ Equipment Rental Management System
+
+[![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2F8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+
+An enterprise-grade, full-stack Equipment Rental Management application engineered with Laravel 10, Tailwind CSS, MySQL, and Docker containerization. Designed to solve complex inventory workflows, track asset availability across distinct timeframes, and enforce granular Role-Based Access Control (RBAC).
+
+---
+
+## Key Features & Business Logic
+
+- **Authentication & Security:** Built-in authentication workflows powered by Laravel Breeze/Jetstream, supporting session management, password resets, and middleware protection against unauthorized resource access.
+- **Granular Role-Based Access Control (RBAC):** Dyna# LaravelRental â€” Equipment Rental Management System
 
 [![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
 [![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
@@ -14,6 +29,30 @@ An enterprise-grade, full-stack Equipment Rental Management application engineer
 
 - **Authentication & Security:** Built-in authentication workflows powered by Laravel Breeze/Jetstream, supporting session management, password resets, and middleware protection against unauthorized resource access.
 - **Granular Role-Based Access Control (RBAC):** Dynamic role and permission assignments via spatie/laravel-permission, isolating administrative capabilities from regular customer accounts.
+- **Inventory & Category Catalog:** Complete management for equipment listings, categorization, search indexing, and real-time availability tracking.
+- **Rental Lifecycle Management:** End-to-end booking process enabling users to request equipment, view rental history, manage schedule overlap, and process cancellations.
+- **Admin Control Center:** Centralized management views for inspecting user rosters, adjusting active permissions, modifying equipment assets, and auditing system-wide rental requests.
+
+---
+
+## Tech Stack & Dependencies
+
+### Core Framework & Backend
+- **Framework:** Laravel 10.x running on PHP 8.2+
+- **Database ORM:** Eloquent ORM with MySQL relational schema
+- **Role Management:** spatie/laravel-permission
+- **Development Tools:** Laravel Telescope & Laravel Debugbar for runtime query auditing and profiling
+
+### Frontend & Build Pipeline
+- **Styling:** Tailwind CSS with @tailwindcss/forms plugin
+- **Asset Bundling:** Vite with Hot Module Replacement (HMR)
+- **UI Components:** Blade Templates with Alpine.js / Vue 3 components
+
+---
+
+## Database Architecture
+
+The database schema utilizes strict relational constraints and foreign key indexing to guarantee data integrity across user bookings and equipment availability.mic role and permission assignments via spatie/laravel-permission, isolating administrative capabilities from regular customer accounts.
 - **Inventory & Category Catalog:** Complete management for equipment listings, categorization, search indexing, and real-time availability tracking.
 - **Rental Lifecycle Management:** End-to-end booking process enabling users to request equipment, view rental history, manage schedule overlap, and process cancellations.
 - **Admin Control Center:** Centralized management views for inspecting user rosters, adjusting active permissions, modifying equipment assets, and auditing system-wide rental requests.
